@@ -32,3 +32,7 @@ date || credit || debit || balance
 * const prompt = require('prompt-sync')();
 * can exit program by using ctrl C (^C) at any point
 ```
+### Preparing your machine to run testing
+Test-drive performed using Jest.
+
+* Adding testing tool to your directory: npm install -g jest
