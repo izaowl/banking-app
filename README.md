@@ -27,4 +27,6 @@ date || credit || debit || balance
 
 * Make sure you have Node and NPM installed
 * Run npm install prompt-sync in the terminal
+* const prompt = require('prompt-sync')();
+* can exit program by using ctrl C (^C) at any point
 ```
