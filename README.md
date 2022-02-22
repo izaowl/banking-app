@@ -25,6 +25,26 @@ date || credit || debit || balance
 
 ```
 
+### User Stories
+
+```
+As person with Bank Account
+So I can keep track of my funds
+I want to be able to see balance on my account
+
+As person with Bank Account
+So I can make save money
+I want to be able to deposit my money
+
+As person with Bank Account
+So I can make save money
+I want to be able to withdraw my money
+
+As person with Bank Account
+So I can make sure all transactions are correct
+I want to see my bank statement wit hall details of withdrawals and deposits
+```
+
 ### Preparing your machine to run Node IRB
 
 * Make sure you have Node and NPM installed
