@@ -70,3 +70,32 @@ OR
 ```
 jest
 ```
+
+![Alt text](/images/code_coverage.png?raw=true "Code coverage")
+
+### Domain Model
+
+
+```
+| Class         | Account                                                                    |
+| ------------- | ---------------------------------------------------------------------------|
+| Properties    | openingBalance, transactionHistory                                         |
+| ------------- | ---------------------------------------------------------------------------|
+| Actions       | Constructor, deposit, withdraw, viewStatement, balance, _transactionAmount |                        |
+| ------------- | ---------------------------------------------------------------------------|
+
+| Class         | Transaction                  |
+| ------------- | -----------------------------|
+| Properties    | date, amount, currentBalance |
+| ------------- | -----------------------------|
+| Actions       | Constructor                  |
+| ------------- | -----------------------------|
+
+| Class         | BankStatement                 
+| ------------- | --------------------------------------------------------------------------------------------------------------------------|
+| Properties    |   n/a                                                                                                                     | 
+| ------------- | --------------------------------------------------------------------------------------------------------------------------|
+| Actions       | printStatement, formatStatementOutput, formatEachTransaction, formatCreditTransaction , formatDebitTransaction, addHeader |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------|
+
+```
