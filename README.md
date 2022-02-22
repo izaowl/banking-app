@@ -57,3 +57,17 @@ I want to see my bank statement wit hall details of withdrawals and deposits
 Test-drive performed using Jest.
 
 * Adding testing tool to your directory: npm install -g jest
+* git clone https://github.com/izaowl/banking-app.git
+$ cd banking-app
+$ yarn install
+$ node
+
+##Testing
+
+```
+yarn test
+```
+OR
+```
+jest
+```
