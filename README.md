@@ -76,7 +76,7 @@ jest
 ### Domain Model
 
 
-```
+
 | Class         | Account                                                                    |
 | ------------- | ---------------------------------------------------------------------------|
 | Properties    | openingBalance, transactionHistory                                         |
@@ -98,4 +98,4 @@ jest
 | Actions       | printStatement, formatStatementOutput, formatEachTransaction, formatCreditTransaction , formatDebitTransaction, addHeader |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------|
 
-```
+
