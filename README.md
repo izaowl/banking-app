@@ -108,7 +108,7 @@ jest
 
 ### Linting
 
-![Alt text](/images/eslint_output.pngraw=true "Eslint output")
+![Alt text](/images/eslint_output.png?raw=true "Eslint output")
 
 Edge cases added to 
 
