@@ -1,10 +1,10 @@
-# banking-app
+# Banking Appp
 
 I built a simple Banking App which calculates balance of the Bank Account. You can enter deposits and withdrawals and it will then print a statement with each transaction and the date when the transaction was entered.
 
 ### My approach
 
-I started by analysing requirements for this application. I wrote User stories which are listed further on this page. I described there all requirements and then created  a doman model. I researched online how Banking ATM's and Bank Accounts are modeled. I decided then to create classes with distinctive responsibilities.
+I started by analysing requirements for this application. I wrote User stories which are listed further on this page. I described there all requirements and then created  a doman model. I researched online how Banking ATM's and Bank Accounts are modeled. I decided then to create classes with distinctive responsibilities makind sure that they are loosely coupled.
 
 ## Specification
 
@@ -106,4 +106,7 @@ jest
 * Node
 * Jest
 
+### Linting
+
+![Alt text](/images/eslint_output.pngraw=true "Eslint output")
 
