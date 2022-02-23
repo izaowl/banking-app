@@ -24,6 +24,9 @@ date || credit || debit || balance
 10/01/2023 || 1000.00 || || 1000.00
 
 ```
+###Output from the Node REPL
+
+![Alt text](/images/REPL_Node_output.png?raw=true "REPL Node output")
 
 ### User Stories
 
@@ -47,10 +50,10 @@ I want to see my bank statement wit hall details of withdrawals and deposits
 
 ### Preparing your machine to run Node IRB
 
-* Make sure you have Node and NPM installed
-* Run npm install prompt-sync in the terminal
+* Make sure you have Node and NPM installed,
+* run npm install prompt-sync in the terminal,
 * const prompt = require('prompt-sync')();
-* can exit program by using ctrl C (^C) at any point
+* to exit, press Ctrl+C again or Ctrl+D or type .exit)
 
 
 ### Preparing your machine to run testing
@@ -91,5 +94,10 @@ jest
 |---------------|---------------------------------------------------------------------------------------------------------------------------|
 | Properties    |   n/a                                                                                                                     | 
 | Actions       | printStatement, formatStatementOutput, formatEachTransaction, formatCreditTransaction , formatDebitTransaction, addHeader |
+
+### Technology
+* JavaScript
+* Node
+* Jest
 
 
