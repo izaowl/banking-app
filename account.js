@@ -8,6 +8,7 @@ class Account {
   }
 
   deposit(amount){
+    this.validateDeposit(amount)
     let currentBalance = amount + this.balance()
     let deposit =  this.transactionHistory.push(new Transaction(amount, currentBalance));
     console.log(`You balance is ${currentBalance}`);
@@ -15,6 +16,7 @@ class Account {
   }
 
   withdraw(amount){
+    this.validateWithdrawal(amount)
     let currentBalance = this.balance() - amount
     let withdrawal = this.transactionHistory.push(new Transaction(- amount, currentBalance));
     console.log(`You balance is ${currentBalance}`);    
@@ -37,6 +39,27 @@ class Account {
         return a + b;
       }, 0)
     return tran;
+  }
+
+  validateDeposit = (amount) => {
+    if (isNaN(amount) === true) {
+      throw new Error ('You entered an invalid valur, please put in an integer instead')
+    }
+    else if (amount < 0) {
+      throw new Error ('Please add a number without a minus sign')
+    }
+  }
+
+  validateWithdrawal = (amount) => {
+    if (isNaN(amount) === true) {
+      throw new Error ('You entered an invalid valur, please put in an integer instead')
+    }
+    else if (amount < 0) {
+      throw new Error ('Please add a number without a minus sign')
+    }
+    else if (amount > this.balance()) {
+      throw new Error ('Not enough money in your account to withdraw this amount')
+    }
   }
 }
 module.exports = Account;
