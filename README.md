@@ -110,3 +110,5 @@ jest
 
 ![Alt text](/images/eslint_output.pngraw=true "Eslint output")
 
+Edge cases added to 
+
