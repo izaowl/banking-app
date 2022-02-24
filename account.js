@@ -12,6 +12,7 @@ class Account {
     let validatedAmount = validateTransaction.validateDeposit(amount)
     let currentBalance = validatedAmount + this.balance()
     let deposit =  this.transactionHistory.push(new Transaction(validatedAmount, currentBalance));
+    console.log(`Your balance is ${currentBalance}`);
     return deposit;
   }
 
@@ -19,13 +20,15 @@ class Account {
     let validateTransaction = new ValidateTransaction;
     let validatedAmount = validateTransaction.validateWithdrawal(amount, this.balance());
     let currentBalance = this.balance() - validatedAmount;
-    let withdrawal = this.transactionHistory.push(new Transaction(- validatedAmount, currentBalance));  
+    let withdrawal = this.transactionHistory.push(new Transaction(- validatedAmount, currentBalance));
+    console.log(`Your balance is ${currentBalance}`);    
     return withdrawal;
   }
 
   viewStatement = () => {
     let statement = new Statement;
     let printout = statement.printStatement(this.transactionHistory);
+    console.log(printout);
     return printout;
   }
 
@@ -36,7 +39,9 @@ class Account {
   balance(){
     let tran = this.transactionHistory.map(transaction => {
       return this._transactionAmount(transaction);
-    }).reduce(function (a, b) {return a + b;}, 0)
+    }).reduce(function (a, b) {
+        return a + b;
+      }, 0)
     return tran;
   }
 }
