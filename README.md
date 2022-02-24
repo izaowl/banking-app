@@ -37,9 +37,17 @@ date || credit || debit || balance
 ### How to interract with my code
 
 * Open terminal and make sure you are in the main directory
-* paste this command into your terminal: node -i -e "$(< account.js)”
-* you can start interracting with my app like in this screenshot 
-* 
+* paste this command into your terminal: node -i -e "$(< account.js)"
+* you can start interracting with my app like in this screenshot by running following commands and methods:
+
+```
+const prompt = require('prompt-sync')(); //to enable .exit tommand to abort NODE REPL
+account = new Account()                  // to create new account
+account.depositCalculation(1000)         // to deposit money
+account.withdrawCalculation(200)         // to withdraw money
+account.balance()                        // to obtain balance
+account.viewStatement()
+```
 ![Alt text](/images/REPL_Node_output.png?raw=true "REPL Node output")
 
 ### Preparing your machine to run testing
@@ -105,9 +113,6 @@ I want to see my bank statement wit hall details of withdrawals and deposits
 * Node
 * Jest
 
-### Linting
-
-![Alt text](/images/eslint_output.png?raw=true "Eslint output")
 
 Edge cases added to 
 
