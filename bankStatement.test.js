@@ -8,7 +8,7 @@ const transactionHistory = [transaction1,transaction2,transaction3]
 describe( 'BankStatement', () => {
      const bankStatement = new BankStatement
   
-     test( 'it can print a statement', () => {
+     it( 'Checking validity of printed statement', () => {
        expect(bankStatement.printStatement(transactionHistory)).toEqual
        ( "|       date ||   credit ||  debit  ||  balance |\n| 14/01/2023 ||          || 500.00  ||   2500.00 |\n| 13/01/2023 ||   2000.00 ||         ||   3000.00 |\n| 10/01/2023 ||   1000.00 ||         ||   1000.00 |")
      })
