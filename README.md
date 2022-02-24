@@ -2,10 +2,6 @@
 
 I built a simple Banking App which calculates balance of the Bank Account. You can enter deposits and withdrawals and it will then print a statement with each transaction and the date when the transaction was entered.
 
-### My approach
-
-I started by analysing requirements for this application. I wrote User stories which are listed further on this page. I described there all requirements and then created  a doman model. I researched online how Banking ATM's and Bank Accounts are modeled. I decided then to create classes with distinctive responsibilities makind sure that they are loosely coupled.
-
 ## Specification
 
 ### Requirements
@@ -30,9 +26,41 @@ date || credit || debit || balance
 10/01/2023 || 1000.00 || || 1000.00
 
 ```
-###Output from the Node REPL
 
+### Preparing your machine to run Node IRB
+
+* Make sure you have Node and NPM installed,
+* run npm install prompt-sync in the terminal,
+* const prompt = require('prompt-sync')();
+* to exit, press Ctrl+C again or Ctrl+D or type .exit)
+
+### How to interract with my code
+
+* Open terminal and make sure you are in the main directory
+* paste this command into your terminal: node -i -e "$(< account.js)”
+* you can start interracting with my app like in this screenshot 
+* 
 ![Alt text](/images/REPL_Node_output.png?raw=true "REPL Node output")
+
+### Preparing your machine to run testing
+Test-drive performed using Jest.
+
+* Adding testing tool to your directory: npm install -g jest
+* git clone https://github.com/izaowl/banking-app.git
+* cd banking-app
+* yarn install node
+
+### Testing
+
+```
+yarn test
+```
+OR
+```
+jest
+```
+![Alt text](/images/code_coverage.png?raw=true "Code coverage")
+
 
 ### User Stories
 
@@ -54,36 +82,7 @@ So I can make sure all transactions are correct
 I want to see my bank statement wit hall details of withdrawals and deposits
 ```
 
-### Preparing your machine to run Node IRB
-
-* Make sure you have Node and NPM installed,
-* run npm install prompt-sync in the terminal,
-* const prompt = require('prompt-sync')();
-* to exit, press Ctrl+C again or Ctrl+D or type .exit)
-
-
-### Preparing your machine to run testing
-Test-drive performed using Jest.
-
-* Adding testing tool to your directory: npm install -g jest
-* git clone https://github.com/izaowl/banking-app.git
-* cd banking-app
-* yarn install node
-
-### Testing
-
-```
-yarn test
-```
-OR
-```
-jest
-```
-
-![Alt text](/images/code_coverage.png?raw=true "Code coverage")
-
 ### Domain Model
-
 
 
 | Class         | Account                                                                    |
