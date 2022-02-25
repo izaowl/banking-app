@@ -129,5 +129,8 @@ I want to see my bank statement wit hall details of withdrawals and deposits
 | Actions       | printStatement, formatStatementOutput, formatEachTransaction, formatCreditTransaction , formatDebitTransaction, addHeader |
 
 
-### Edge cases added to 
+### Edge cases added to my code and not included in initial requirements:
+* check for negative withdrawals
+* check for validity of the string, i.e. it has to be an Integer
+* check if there is enough money in account to withdraw
 
