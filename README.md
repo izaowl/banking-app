@@ -30,8 +30,7 @@ node --version
 ```
 * If you don't have Node.js installed on your machine follow up instructions here: https://nodejs.org/en/
 
-
-* clone my repository
+* Clone my repository
 ```
 git clone https://github.com/izaowl/banking-app.git
 ```
