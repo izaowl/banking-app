@@ -1,8 +1,7 @@
 # Banking Appp
 
 I built a simple Banking App which calculates balance of the Bank Account. You can enter deposits and withdrawals and it will then print a statement with each transaction and the date when the transaction was entered.
-
-
+My code was developed and tested using Node.js and jest. In order to run it and it's tests please follow my instructions:
 ### Preparing your machine to run Node IRB
 
 * Make sure you have Node and npm installed,
@@ -18,7 +17,7 @@ npm --version
 ```
 npm install -g npm
 ```
-* To cheeck if npm is instlled run:
+* To cheeck if Node.js is instlled run:
 ```
 node -v
 ```
