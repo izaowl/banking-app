@@ -42,12 +42,12 @@ git clone https://github.com/izaowl/banking-app.git
 * you can start interracting with my app by running the following commands and methods:
 
 ```
-const prompt = require('prompt-sync')(); //to enable .exit tommand to abort NODE REPL
+const prompt = require('prompt-sync')(); // added at the beginning or REPL session to enable .exit command to abort NODE REPL
 account = new Account()                  // to create new account
 account.depositCalculation(1000)         // to deposit money
 account.withdrawCalculation(200)         // to withdraw money
 account.balance()                        // to obtain balance
-account.viewStatement()
+account.viewStatement()                  // to obtain statement
 ```
 This screenshot illustrates outputs:
 
