@@ -6,7 +6,6 @@ I built a simple Banking App which calculates balance of the Bank Account. You c
 ### Preparing your machine to run Node IRB
 
 * Make sure you have Node and npm installed,
-
 * To cheeck if npm is instlled run:
 ```
 npm -v  
@@ -19,7 +18,6 @@ npm --version
 ```
 npm install -g npm
 ```
-
 * To cheeck if npm is instlled run:
 ```
 node -v
@@ -54,22 +52,18 @@ This screenshot illustrates outputs:
 ![Alt text](/images/REPL_Node_output.png?raw=true "REPL Node output")
 
 ### Preparing your machine to run testing
-Test-drive performed using Jest.
+In TDD development I used Jest.
 
-* Adding testing tool to your directory: npm install -g jest
-* git clone https://github.com/izaowl/banking-app.git
-* cd banking-app
-* yarn install node
-
-### Testing
-
+* Adding testing tool to your directory: 
 ```
-yarn test
+npm install jest
 ```
-OR
+
+* in directory banking-app rund thos command and you will get output of the tet as per my screenshot
 ```
 jest
 ```
+
 ![Alt text](/images/code_coverage.png?raw=true "Code coverage")
 
 ## Specification
