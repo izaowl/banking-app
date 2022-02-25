@@ -1,7 +1,7 @@
 # Banking Appp
 
 I built a simple Banking App which calculates balance of the Bank Account. You can enter deposits and withdrawals and it will then print a statement with each transaction and the date when the transaction was entered.
-My code was developed and tested using Node.js and jest. In order to run it and it's tests please follow my instructions:
+My code was developed i nJavaScript and tested using Node.js and jest. In order to run it and it's tests please follow my instructions:
 ### Preparing your machine to run my code using Node IRB
 
 * Make sure you have Node and npm installed,
@@ -128,11 +128,6 @@ I want to see my bank statement wit hall details of withdrawals and deposits
 | Properties    |   n/a                                                                                                                     | 
 | Actions       | printStatement, formatStatementOutput, formatEachTransaction, formatCreditTransaction , formatDebitTransaction, addHeader |
 
-### Technology
-* JavaScript
-* Node
-* Jest
 
-
-Edge cases added to 
+### Edge cases added to 
 
