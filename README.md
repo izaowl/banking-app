@@ -5,22 +5,42 @@ I built a simple Banking App which calculates balance of the Bank Account. You c
 
 ### Preparing your machine to run Node IRB
 
-* Make sure you have Node and NPM installed,
-* You can check to see if it is already installed by running the command:
+* Make sure you have Node and npm installed,
+
+* To cheeck if npm is instlled run:
+```
+npm -v  
+```
+or
+```
+npm --version
+```
+* If npm is not installed run this command:
+```
+npm install -g npm
+```
+
+* To cheeck if npm is instlled run:
 ```
 node -v
 ```
-* run in the terminal:  npm install prompt-sync
+or
 ```
+node --version
+```
+* If you don't have Node.js installed on your machine follow up instructions here: https://nodejs.org/en/
 
-* git clone https://github.com/izaowl/banking-app.git
-* 
+
+* clone my repository
+```
+git clone https://github.com/izaowl/banking-app.git
+```
 
 ### How to interract with my code
 
-* Open terminal and make sure you are in the main directory
+* Open terminal and make sure you are in the main directory banking-app
 * paste this command into your terminal: node -i -e "$(< account.js)"
-* you can start interracting with my app like in this screenshot by running following commands and methods:
+* you can start interracting with my app by running the following commands and methods:
 
 ```
 const prompt = require('prompt-sync')(); //to enable .exit tommand to abort NODE REPL
@@ -30,6 +50,8 @@ account.withdrawCalculation(200)         // to withdraw money
 account.balance()                        // to obtain balance
 account.viewStatement()
 ```
+This screenshot illustrates outputs:
+
 ![Alt text](/images/REPL_Node_output.png?raw=true "REPL Node output")
 
 ### Preparing your machine to run testing
