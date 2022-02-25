@@ -2,7 +2,7 @@
 
 I built a simple Banking App which calculates balance of the Bank Account. You can enter deposits and withdrawals and it will then print a statement with each transaction and the date when the transaction was entered.
 My code was developed and tested using Node.js and jest. In order to run it and it's tests please follow my instructions:
-### Preparing your machine to run Node IRB
+### Preparing your machine to run my code using Node IRB
 
 * Make sure you have Node and npm installed,
 * To cheeck if npm is instlled run:
@@ -50,7 +50,7 @@ This screenshot illustrates outputs:
 
 ![Alt text](/images/REPL_Node_output.png?raw=true "REPL Node output")
 
-### Preparing your machine to run testing
+### Preparing your machine to run my code using Node and jest
 In TDD development I used Jest.
 
 * Adding testing tool to your directory: 
