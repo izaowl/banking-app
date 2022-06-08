@@ -1,6 +1,69 @@
 # Banking Appp
 
 I built a simple Banking App which calculates balance of the Bank Account. You can enter deposits and withdrawals and it will then print a statement with each transaction and the date when the transaction was entered.
+My code was developed in JavaScript and Node.js, tested using jest. In order to run it and it's tests please follow my instructions:
+### Preparing your machine to run my code using Node IRB
+
+* Make sure you have Node and npm installed,
+* To cheeck if npm is instlled run:
+```
+npm -v  
+```
+or
+```
+npm --version
+```
+* If npm is not installed run this command:
+```
+npm install -g npm
+```
+* To cheeck if Node.js is instlled run:
+```
+node -v
+```
+or
+```
+node --version
+```
+* If you don't have Node.js installed on your machine follow up instructions here: https://nodejs.org/en/
+
+* Clone my repository
+```
+git clone https://github.com/izaowl/banking-app.git
+```
+
+### How to interract with my code
+
+* Open terminal and make sure you are in the main directory banking-app
+* paste this command into your terminal: node -i -e "$(< account.js)"
+* you can start interracting with my app by running the following commands and methods:
+
+```
+const prompt = require('prompt-sync')(); // added at the beginning or REPL session to enable .exit command to abort NODE REPL
+account = new Account()                  // to create new account
+account.depositCalculation(1000)         // to deposit money
+account.withdrawCalculation(200)         // to withdraw money
+account.balance()                        // to obtain balance
+account.viewStatement()                  // to obtain statement
+```
+This screenshot illustrates outputs:
+
+![Alt text](/images/REPL_Node_output.png?raw=true "REPL Node output")
+
+### Preparing your machine to run my code using Node and jest
+In TDD development I used Jest.
+
+* Adding testing tool to your directory: 
+```
+npm install jest
+```
+
+* in directory banking-app rund thos command and you will get output of the tet as per my screenshot
+```
+jest
+```
+
+![Alt text](/images/code_coverage.png?raw=true "Code coverage")
 
 ## Specification
 
@@ -26,49 +89,6 @@ date || credit || debit || balance
 10/01/2023 || 1000.00 || || 1000.00
 
 ```
-
-### Preparing your machine to run Node IRB
-
-* Make sure you have Node and NPM installed,
-* run npm install prompt-sync in the terminal,
-* const prompt = require('prompt-sync')();
-* to exit, press Ctrl+C again or Ctrl+D or type .exit)
-
-### How to interract with my code
-
-* Open terminal and make sure you are in the main directory
-* paste this command into your terminal: node -i -e "$(< account.js)"
-* you can start interracting with my app like in this screenshot by running following commands and methods:
-
-```
-const prompt = require('prompt-sync')(); //to enable .exit tommand to abort NODE REPL
-account = new Account()                  // to create new account
-account.depositCalculation(1000)         // to deposit money
-account.withdrawCalculation(200)         // to withdraw money
-account.balance()                        // to obtain balance
-account.viewStatement()
-```
-![Alt text](/images/REPL_Node_output.png?raw=true "REPL Node output")
-
-### Preparing your machine to run testing
-Test-drive performed using Jest.
-
-* Adding testing tool to your directory: npm install -g jest
-* git clone https://github.com/izaowl/banking-app.git
-* cd banking-app
-* yarn install node
-
-### Testing
-
-```
-yarn test
-```
-OR
-```
-jest
-```
-![Alt text](/images/code_coverage.png?raw=true "Code coverage")
-
 
 ### User Stories
 
@@ -108,11 +128,9 @@ I want to see my bank statement wit hall details of withdrawals and deposits
 | Properties    |   n/a                                                                                                                     | 
 | Actions       | printStatement, formatStatementOutput, formatEachTransaction, formatCreditTransaction , formatDebitTransaction, addHeader |
 
-### Technology
-* JavaScript
-* Node
-* Jest
 
-
-Edge cases added to 
+### Edge cases added to my code and not included in initial requirements:
+* check for negative withdrawals
+* check for validity of the string, i.e. it has to be an Integer
+* check if there is enough money in account to withdraw
 
