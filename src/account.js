@@ -28,7 +28,7 @@ class Account {
   viewStatement = () => {
     let statement = new Statement;
     let printout = statement.printStatement(this.transactionHistory);
-    //console.log(printout);
+    console.log(printout);
     return printout;
   }
 
