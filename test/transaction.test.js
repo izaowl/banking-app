@@ -1,4 +1,4 @@
-const Transaction = require('./transaction');
+const Transaction = require('../src/transaction');
 
 describe( 'Transaction', () => {
   test( 'Checking validity of attributes of class constructor', () => {

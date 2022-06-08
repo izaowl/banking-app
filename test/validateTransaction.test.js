@@ -1,6 +1,6 @@
 //const { describe, it } = require('jest-circus')
-const ValidateTransaction = require('./validateTransaction')
-const Account = require('./account')
+const ValidateTransaction = require('../src/validateTransaction')
+const Account = require('../src/account')
 
 describe('#checking validation of withdrawals', () =>{
   it('Checks if enough money in account',() =>{

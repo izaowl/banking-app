@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
-const Account = require('./account');
-const ValidateTransaction = require('./validateTransaction');
+const Account = require('../src/account');
+const ValidateTransaction = require('../src/validateTransaction');
 describe( '#account', () => {
 
   it('Constructor works', () => {

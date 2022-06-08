@@ -1,4 +1,4 @@
-const BankStatement = require('./bankStatement');
+const BankStatement = require('../src/bankStatement');
 
 let transaction1 = {date: '10/01/2023', amount: 1000, currentBalance: 1000}
 let transaction2 = {date: '13/01/2023', amount: 2000, currentBalance: 3000}
