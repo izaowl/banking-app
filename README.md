@@ -1,4 +1,4 @@
-# Banking Appp
+# Banking App
 
 I built a simple Banking App which calculates balance of the Bank Account. You can enter deposits and withdrawals and it will then print a statement with each transaction and the date when the transaction was entered.
 My code was developed in JavaScript and Node.js, tested using jest. In order to run it and it's tests please follow my instructions:
