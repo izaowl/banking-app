@@ -12,7 +12,7 @@ class Account {
     let validatedAmount = validateTransaction.validateDeposit(amount)
     let currentBalance = validatedAmount + this.balance()
     let deposit =  this.transactionHistory.push(new Transaction(validatedAmount, currentBalance));
-    console.log(`Your balance is ${currentBalance}`);
+    //console.log(`Your balance is ${currentBalance}`);
     return deposit;
   }
 
@@ -29,9 +29,7 @@ class Account {
     let statement = new Statement;
     let printout = statement.printStatement(this.transactionHistory);
     console.log(printout);
-    return printout;
   }
-
   _transactionAmount(transaction) {
     return transaction.amount;
   }

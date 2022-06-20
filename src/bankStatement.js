@@ -1,5 +1,8 @@
 class BankStatement {
-  
+  constructor() {
+    this.transactions = [];
+    this.header = "date || credit || debit || balance\n";
+  }
     printStatement = (transactionHistory) => {
       return this.addHeader() + this.formatStatementOutput(transactionHistory).reverse().join('\n')
     }

@@ -51,12 +51,35 @@ describe( '#withdraw', () => {
     expect(account.balance()).toEqual(50.25)
   })
 
+  // describe( '#viewStatement', () => {
+  //   it( 'can print transaction history as a formatted statement', () => {
+  //     const account = new Account()
+  //     account.depositCalculation(200)
+  //     account.withdrawCalculation(100)
+  //     expect(account.viewStatement()).toEqual( `|       date ||   credit ||  debit  ||  balance |\n| ${new Date().toLocaleDateString()} ||          || 100.00  ||   100.00 |\n| ${new Date().toLocaleDateString()} ||   200.00 ||         ||   200.00 |`)
+  //   })
+  // })
+
   describe( '#viewStatement', () => {
-    it( 'can print transaction history as a formatted statement', () => {
+    const log = console.log;
+    beforeEach(() => {
+      console.log = jest.fn(); // create a new mock function for each test
+    });
+    afterAll(() => {
+      console.log = log; // restore original console.log after all tests
+    });
+    it( 'can print transaction history header', () => {
+      const account = new Account()
+      account.viewStatement()
+      expect(console.log.mock.calls[0][0]).toBe('|       date ||   credit ||  debit  ||  balance |\n');
+    })
+
+    it( 'can print transaction history - deposit', () => {
       const account = new Account()
       account.depositCalculation(200)
-      account.withdrawCalculation(100)
-      expect(account.viewStatement()).toEqual( `|       date ||   credit ||  debit  ||  balance |\n| ${new Date().toLocaleDateString()} ||          || 100.00  ||   100.00 |\n| ${new Date().toLocaleDateString()} ||   200.00 ||         ||   200.00 |`)
+      account.viewStatement()
+      expect(console.log.mock.calls[0][0]).toContain(' ||   200.00 ||         ||   200.00 |');
+      
     })
   })
 })
